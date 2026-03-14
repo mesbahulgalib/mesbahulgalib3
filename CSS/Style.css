@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Variable*/
+
+:root{
+    --primary-color:#5E3BEE;
+    --heading-color:#282938;
+    --acent-color:#E62872;
+    --secondary-color:#1C1E53;
+    --font-family:"Roboto", sans-serif;
+    --light-color:white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family);
+    color: var(--heading-color)
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Navbar*/
+.nav_bar{
+    color:var(--heading-color) !important;
+    transition: 0.2s linear;
+}
+.active{
+    color:var(--primary-color) !important;
+}
+.nav_text:hover{
+    color:var(--primary-color) !important;
+}
+
+.navbar_main {
+    box-shadow: 3px 1px 10px 0px #d5a1f1;
+}
+
+.Custom_btn{
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    color:var(--primary-color) !important;
+    padding: 7px 20px;
+    transition: 0.2s linear;
+}
+
+.Custom_btn:hover{
+    background: var(--primary-color);
+    color:var(--light-color) !important;
+}
+
+.mobile_first{
+    display: none;
+}
+
+/*sero section*/
+.hero .section_main{
+    padding: 80px 0 !important;
+}
+ .Pr_design{
+    color:var(--primary-color);
+    
+ }
+
+ .heading{
+    font-size: 50px;
+    font-weight: 900;
+ }
+
+ .hero_text{
+    font-weight: 440;
+    color:var(--secondary-color)
+ }
+
+ .get-touch{
+    margin-top: 40px;
+ }
+
+ /*Expertice Section*/
+
+ .section_title{
+    font-weight: 900;
+ }
+
+ .ex_title{
+    font-size: 22px;
+    font-weight: 600;
+ }
+
+ .ex_text{
+    font-size: 14px;
+ }
+
+ .card_icon{
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 1px 3px 5px 2px #d1c5c5;
+   margin-bottom: px;
+   
+ }
+
+ .ex-text{
+    cursor:pointer;
+    transition: all 0.2s linear;
+ }
+
+ .ex-text:hover{
+    border-bottom: 3px solid var(--primary-color) !important;
+ }
+
+ .card_content {
+    padding-top: 20px;
+}
+
+p.label {
+    font-weight: 700;
+}
+
+/* about section  */
+.about_content{
+    font-family: var(--font-roboto);
+}
+
+/* portfolio section  */
+
+a.view_btn {
+    font-size: 14px;
+    color: var(--heading-color);
+ 
+}
+
+.card.p_card .card_body {
+    padding: 15px;
+}
+
+.card.p_card {
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 4px #e5e5e5;
+    transition: box-shadow 0.2s linear;
+}
+
+.card.p_card:hover {
+    box-shadow: 3px 3px 15px 6px #c5c5c5;
+}
+
+.view_arrow .fa-arrow-right-long {
+    transition: transform 0.2s linear;
+    transform: rotate(-45deg); 
+}
+
+.card.p_card:hover .view_arrow .fa-arrow-right-long {
+    transform: rotate(0deg); 
+}
+
+a.view_btn {
+    font-size: 14px;
+    color: var(--heading-color);
+    display: inline;
+    text-decoration: underline;
+}
+
+.view_arrow .fa-arrow-right-long {
+    color: green;
+    transition: transform 0.2s linear;
+}
+
+
+/* Testimonial Section */
+.testimonial {
+    background-color: #EEF0FA;
+}
+
+.card.t_card {
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    background: #fff;
+    padding: 20px;
+}
+
+.stars .fa-star {
+    color: #F5A623;
+    font-size: 18px;
+}
+
+.t_text {
+    font-size: 14px;
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+.t_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.t_name {
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0;
+}
+
+.t_company {
+    font-size: 13px;
+    color: gray;
+    margin: 0;
+}
+
+
+/* footer */
+
+.footer {
+    background: black !important;
+    color: var(--light-color);
+    padding-top: 40px;
+}
+
+
+/* Contact Section */
+.contact_header {
+    border: 1px dashed var(--primary-color);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.contact_sub {
+    font-size: 14px;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.form_label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.form_input {
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    outline: none;
+    font-family: var(--font-family);
+    color: var(--heading-color);
+}
+
+.form_input:focus {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 5px rgba(94, 59, 238, 0.3);
+}
+
+.form_select {
+    appearance: auto;
+    cursor: pointer;
+}
+
+.form_textarea {
+    height: 120px;
+    resize: none;
+}
+
+.submit_btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.submit_btn:hover {
+    background: var(--secondary-color);
+}

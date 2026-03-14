@@ -1,0 +1,7 @@
+@media(max-width:570px)
+{
+    .desktop_first{display: none;}
+    .mobile_first{display: block; margin-top: 30px;   }
+    .img_wrapprr{
+        margin-top:30px;}
+}
